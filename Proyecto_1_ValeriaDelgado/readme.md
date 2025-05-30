@@ -2,7 +2,7 @@
 
 ## ¿De qué trata este proyecto?
 
-Este proyecto es un **Menú de Comida ** creado con **Glade**, **GTK+ 3** y **Python**. Presenta una interfaz gráfica que puede ser usada como base para sistemas de pedidos o menús digitales.
+Este proyecto es un **Menú de Comida** creado con **Glade**, **GTK+ 3** y **Python**. Presenta una interfaz gráfica que puede ser usada como base para sistemas de pedidos o menús digitales.
 
 La interfaz está lista para incorporar funciones como selección de platos, precios y procesamiento de pedidos.
 
@@ -61,7 +61,9 @@ El archivo `.glade` se puede modificar desde Glade para personalizar la interfaz
 
 El script `ejecutarinterfaz.py` carga y muestra la ventana del menú usando PyGObject. Este es el código utilizado:
 
-```python
+
+```
+python
 import gi
 gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk
@@ -79,11 +81,12 @@ def abrir_glade(archivo_glade):
 abrir_glade("menucomida.glade")
 ```
 
+
 ## ¿Cómo se ejecuta?
 
 1. Asegura que los archivos `menucomida.glade` y `ejecutarinterfaz.py` estén en la misma carpeta.
 2. Abre la terminal de MSYS2 y ejecuta:
 
-```bash
+```
 python ejecutarinterfaz.py
 ```
