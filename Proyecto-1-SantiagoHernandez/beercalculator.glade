@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.40.0 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkListStore" id="listasexo1">
+    <columns>
+      <!-- column-name gchararray1 -->
+      <column type="gchararray"/>
+    </columns>
+    <data>
+      <row>
+        <col id="0" translatable="yes">Hombre</col>
+      </row>
+      <row>
+        <col id="0" translatable="yes">Mujer</col>
+      </row>
+    </data>
+  </object>
+  <object class="GtkWindow" id="Ventana">
+    <property name="width-request">500</property>
+    <property name="height-request">300</property>
+    <property name="can-focus">False</property>
+    <child>
+      <object class="GtkFixed" id="Fixed1">
+        <property name="width-request">500</property>
+        <property name="height-request">300</property>
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkLabel" id="Etiqueta">
+            <property name="width-request">500</property>
+            <property name="height-request">33</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Calculadora de cerveza</property>
+            <property name="width-chars">0</property>
+            <property name="max-width-chars">0</property>
+            <attributes>
+              <attribute name="scale" value="2"/>
+            </attributes>
+          </object>
+        </child>
+        <child>
+          <object class="GtkEntry" id="entrada1">
+            <property name="width-request">168</property>
+            <property name="height-request">32</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+          </object>
+          <packing>
+            <property name="x">217</property>
+            <property name="y">60</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="Etiqueta2">
+            <property name="width-request">59</property>
+            <property name="height-request">26</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">peso:</property>
+            <attributes>
+              <attribute name="scale" value="2"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">93</property>
+            <property name="y">61</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkComboBox" id="sexo">
+            <property name="width-request">169</property>
+            <property name="height-request">38</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="model">listasexo1</property>
+            <property name="wrap-width">3</property>
+            <property name="row-span-column">1</property>
+            <property name="column-span-column">1</property>
+            <property name="active">1</property>
+            <property name="has-entry">True</property>
+            <property name="entry-text-column">2</property>
+            <property name="id-column">1</property>
+            <child internal-child="entry">
+              <object class="GtkEntry" id="entrada">
+                <property name="can-focus">False</property>
+                <property name="width-chars">0</property>
+                <property name="placeholder-text" translatable="yes">seleccionar...</property>
+              </object>
+            </child>
+          </object>
+          <packing>
+            <property name="x">217</property>
+            <property name="y">108</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="Etiqueta3">
+            <property name="width-request">100</property>
+            <property name="height-request">32</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">genero:</property>
+            <attributes>
+              <attribute name="scale" value="2"/>
+            </attributes>
+          </object>
+          <packing>
+            <property name="x">73</property>
+            <property name="y">110</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="botoncito">
+            <property name="label" translatable="yes">calcular</property>
+            <property name="width-request">100</property>
+            <property name="height-request">46</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+          </object>
+          <packing>
+            <property name="x">77</property>
+            <property name="y">176</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="resultado">
+            <property name="width-request">111</property>
+            <property name="height-request">45</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">resultado</property>
+          </object>
+          <packing>
+            <property name="x">240</property>
+            <property name="y">177</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
