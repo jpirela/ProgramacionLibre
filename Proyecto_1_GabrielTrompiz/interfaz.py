@@ -5,8 +5,7 @@ from gi.repository import Gtk
 class MyApp:
     def __init__(self):
         self.builder = Gtk.Builder()
-        self.builder.add_from_file("C:\\Users\\Guardia AIT\\Desktop\\interfaz de usuario\\interfaz de usuario.glade")
-        # Usa el ID correcto de la ventana principal
+        self.builder.add_from_file("C:/Users/Guardia AIT/Desktop/proyectos/Proyecto_1_GabrielTrompiz/Proyecto_1_GabrielTrompiz/interfaz de usuario.glade")
         self.window = self.builder.get_object("window")
 
         if self.window is None:
