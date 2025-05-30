@@ -41,7 +41,8 @@ Puede ser necesario agregar las rutas al **PATH**.
 
 ### Para usarlo temporalmente:
 
-```export PATH=/mingw64/bin:$PATH
+```
+export PATH=/mingw64/bin:$PATH
 ```
 ### Para agregarlo de forma permanente:
 
@@ -64,6 +65,8 @@ El archivo `.glade` se puede modificar en cualquier momento desde Glade para cam
 
 El archivo `ejecutarinterfaz.py` carga el archivo `.glade` y muestra la ventana usando PyGObject. El siguiente es el contenido del script:
 
+
+```
 python
 import gi
 gi.require_version("Gtk", "3.0")
@@ -80,6 +83,8 @@ def abrir_glade(archivo_glade):
     Gtk.main()
 
 abrir_glade("gestorcontactos.glade")
+```
+
 
 
 ## ▶️ ¿Cómo ejecutar el programa?
