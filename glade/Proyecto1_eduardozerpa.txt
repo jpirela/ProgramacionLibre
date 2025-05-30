@@ -1,0 +1,29 @@
+Proyecto1_eduardozerpa
+Configuración y ejecución de la interfaz con Glade y Python
+
+Instalación de dependencias  
+Para ejecutar correctamente la interfaz gráfica, primero se deben instalar los siguientes programas y bibliotecas:
+- GTK3: Necesario para la gestión de la interfaz.
+- Python: Permite correr la aplicación utilizando GTK3.
+- Glade: Editor de interfaces para diseñar la estructura visual del programa.
+Funcionalidad del programa  
+Este proyecto utiliza Glade para crear una interfaz destinada al registro de usuarios en una plataforma específica. La estructura de la interfaz se organiza mediante:
+- Una ventana principal que actúa como marco.
+- Distribución ordenada para organizar etiquetas (labels), campos de entrada (inputs) y botones (buttons).
+
+Pasos para ejecutar la aplicación 
+1. **Instalar MSYS2**  
+   - Es necesario para compilar y ejecutar el código de Glade en Python.  
+   - Se puede descargar desde [msys2.org](https://www.msys2.org/).
+
+2. Navegar hasta la carpeta del proyecto  
+   - Abre la terminal y usa el siguiente comando para acceder al directorio del proyecto:
+     sh
+     cd C:\Users\eduar\OneDrive\Desktop\glade
+
+3. Ejecutar el programa 
+   - Una vez ubicado en la carpeta del proyecto, ejecuta:
+     sh
+     python app.py
+    
+   - Esto cargará la interfaz diseñada en Glade y la conectará con Python
