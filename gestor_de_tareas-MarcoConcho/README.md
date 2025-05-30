@@ -42,7 +42,7 @@ Para que Python siempre esté disponible en futuras sesiones, agrégalo al archi
 
 echo 'export PATH=/mingw64/bin:$PATH' >> ~/.bashrc
 source ~/.bashrc
----
+
 
 ### Configurar el PATH para GTK+3
 Si GTK+3 no es reconocido después de la instalación, usa estos comandos:  
@@ -56,7 +56,7 @@ Al igual que con Python, haz que el cambio sea permanente con:
 
 echo 'export PATH=/mingw64/bin:$PATH' >> ~/.bashrc
 source ~/.bashrc
----
+
 ## Desarrollo en Glade y Python
 
 ### Creación de la interfaz con Glade
