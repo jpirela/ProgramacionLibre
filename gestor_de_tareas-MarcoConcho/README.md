@@ -14,7 +14,7 @@ Para ejecutar este proyecto, sigue estos pasos:
 ### 1. Instalación de dependencias
 Abre la terminal MSYS2 y ejecuta los siguientes comandos:
 
-bash
+
 # Actualizar dependencias
 pacman -Syu
 
@@ -28,19 +28,35 @@ pacman -S mingw-w64-x86_64-python
 pacman -S mingw-w64-x86_64-python-pygobject
 
 ### 2. Configurar el PATH (Opcional)
-Si después de la instalación **Python** o **GTK+3** no son reconocidos en la terminal, es posible que debas agregarlos al `PATH`. Usa los siguientes comandos:
+Si Python o GTK+3 no son reconocidos después de la instalación, debes agregarlos al PATH.  
 
-#### Exportar variables temporalmente (para la sesión actual)
-bash
+### Configurar el PATH para Python
+Si Python no es detectado después de la instalación, usa el siguiente comando en MSYS2:  
+
+#### Exportar Python temporalmente
+export PATH=/mingw64/bin:$PATH
+Esto hará que Python sea reconocido en la sesión actual.  
+
+#### Hacer el cambio permanente
+Para que Python siempre esté disponible en futuras sesiones, agrégalo al archivo .bashrc con: 
+
+echo 'export PATH=/mingw64/bin:$PATH' >> ~/.bashrc
+source ~/.bashrc
+---
+
+### Configurar el PATH para GTK+3
+Si GTK+3 no es reconocido después de la instalación, usa estos comandos:  
+
+#### Exportar GTK+3 temporalmente
+
 export PATH=/mingw64/bin:$PATH
 
-#### Hacer el cambio permanente (se guarda en el perfil de usuario)
-bash
-echo 'export PATH=/mingw64/bin:$PATH' >> ~/.baPythone ~GTK+3
+#### Hacer el cambio permanente
+Al igual que con Python, haz que el cambio sea permanente con:  
 
-Este paso asegura que Python y GTK+3 sean accesibles en todas las futuras sesiones de terminal.
-
-
+echo 'export PATH=/mingw64/bin:$PATH' >> ~/.bashrc
+source ~/.bashrc
+---
 ## Desarrollo en Glade y Python
 
 ### Creación de la interfaz con Glade
