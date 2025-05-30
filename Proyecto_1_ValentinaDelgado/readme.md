@@ -4,7 +4,7 @@
 
 Este es un **Gestor de Contactos** desarrollado con **Glade**, **GTK+ 3** y **Python**. Permite visualizar una interfaz gráfica que en futuras versiones puede extenderse para gestionar contactos (como una agenda).
 
-Actualmente, la interfaz está diseñada y lista para integrar funcionalidades como agregar, editar o eliminar contactos.
+La interfaz está diseñada y lista para integrar funcionalidades como agregar, editar o eliminar contactos.
 
 
 ## ¿Qué se necesita para ejecutarlo?
@@ -51,7 +51,7 @@ echo 'export PATH=/mingw64/bin:$PATH' >> ~/.bashrc
 source ~/.bashrc
 ```
 
-## 🎨 ¿Cómo está hecha la interfaz?
+## ¿Cómo está hecha la interfaz?
 
 La interfaz fue creada con **Glade**, utilizando una estructura simple:
 
@@ -87,10 +87,12 @@ abrir_glade("gestorcontactos.glade")
 
 
 
-## ▶️ ¿Cómo ejecutar el programa?
+## ¿Cómo ejecutar el programa?
 
 1. Verificar que los archivos `gestorcontactos.glade` y `ejecutarinterfaz.py` se encuentren en la misma carpeta.
 
 2. Abrir la terminal de MSYS2 y ejecutar el comando:
 
+```
 python ejecutarinterfaz.py
+```
