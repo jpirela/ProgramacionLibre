@@ -1,4 +1,5 @@
 En la maquina virtual ejecute los comandos:
+
 sudo apt-get update
 
 sudo apt-get install glade
