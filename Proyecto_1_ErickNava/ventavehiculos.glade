@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkWindow" id="main_window">
+    <property name="title">Venta de Vehículos</property>
+    <property name="default_width">600</property>
+    <property name="default_height">400</property>
+    <child>
+      <object class="GtkBox" id="main_box">
+        <property name="orientation">VERTICAL</property>
+        <property name="spacing">10</property>
+        <property name="margin">10</property>
+
+        <!-- Formulario de ingreso -->
+        <child>
+          <object class="GtkGrid" id="form_grid">
+            <property name="row_spacing">5</property>
+            <property name="column_spacing">5</property>
+
+            <child>
+              <object class="GtkLabel" id="label_marca">
+                <property name="label">Marca:</property>
+                <property name="halign">END</property>
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="entry_marca"/>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="top_attach">0</property>
+              </packing>
+            </child>
+
+            <child>
+              <object class="GtkLabel" id="label_modelo">
+                <property name="label">Modelo:</property>
+                <property name="halign">END</property>
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="entry_modelo"/>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="top_attach">1</property>
+              </packing>
+            </child>
+
+            <child>
+              <object class="GtkLabel" id="label_ano">
+                <property name="label">Año:</property>
+                <property name="halign">END</property>
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="entry_ano"/>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="top_attach">2</property>
+              </packing>
+            </child>
+
+            <!-- Precio con $ al lado -->
+            <child>
+              <object class="GtkLabel" id="label_precio">
+                <property name="label">Precio:</property>
+                <property name="halign">END</property>
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">3</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkBox" id="precio_box">
+                <property name="orientation">HORIZONTAL</property>
+                <child>
+                  <object class="GtkLabel" id="label_dolar">
+                    <property name="label">$</property>
+                    <property name="halign">START</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkEntry" id="entry_precio"/>
+                </child>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="top_attach">3</property>
+              </packing>
+            </child>
+
+            <!-- Botones Agregar y Eliminar -->
+            <child>
+              <object class="GtkButton" id="button_agregar">
+                <property name="label">Agregar Vehículo</property>
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">4</property>
+                <property name="width">1</property>
+              </packing>
+            </child>
+
+            <child>
+              <object class="GtkButton" id="button_eliminar">
+                <property name="label">Eliminar Vehículo</property>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="top_attach">4</property>
+                <property name="width">1</property>
+              </packing>
+            </child>
+
+          </object>
+        </child>
+
+        <!-- Lista de vehículos -->
+        <child>
+          <object class="GtkScrolledWindow" id="scroll_vehicles">
+            <property name="hexpand">True</property>
+            <property name="vexpand">True</property>
+            <child>
+              <object class="GtkTreeView" id="treeview_vehicles">
+                <property name="headers_visible">True</property>
+              </object>
+            </child>
+          </object>
+        </child>
+
+      </object>
+    </child>
+  </object>
+</interface>
