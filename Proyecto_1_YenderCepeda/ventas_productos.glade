@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkWindow" id="main_window">
+    <property name="title">Sistema de Ventas - Productos</property>
+    <property name="default_width">550</property>
+    <property name="default_height">350</property>
+    <child>
+      <object class="GtkBox" id="main_vbox">
+        <property name="orientation">VERTICAL</property>
+        <property name="spacing">12</property>
+        <property name="margin">15</property>
+
+        <child>
+          <object class="GtkGrid" id="grid_form">
+            <property name="row_spacing">8</property>
+            <property name="column_spacing">10</property>
+
+            <child>
+              <object class="GtkLabel" id="label_nombre">
+                <property name="label">Nombre del producto:</property>
+                <property name="halign">END</property>
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="entry_nombre"/>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="top_attach">0</property>
+                <property name="width">2</property>
+              </packing>
+            </child>
+
+            <child>
+              <object class="GtkLabel" id="label_cantidad">
+                <property name="label">Cantidad:</property>
+                <property name="halign">END</property>
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkEntry" id="entry_cantidad"/>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="top_attach">1</property>
+              </packing>
+            </child>
+
+            <child>
+              <object class="GtkLabel" id="label_precio">
+                <property name="label">Precio:</property>
+                <property name="halign">END</property>
+              </object>
+              <packing>
+                <property name="left_attach">0</property>
+                <property name="top_attach">2</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkBox" id="box_precio">
+                <property name="orientation">HORIZONTAL</property>
+                <child>
+                  <object class="GtkLabel" id="label_dolar_precio">
+                    <property name="label">$</property>
+                  </object>
+                </child>
+                <child>
+                  <object class="GtkEntry" id="entry_precio"/>
+                </child>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="top_attach">2</property>
+                <property name="width">2</property>
+              </packing>
+            </child>
+
+            <child>
+              <object class="GtkButton" id="button_agregar">
+                <property name="label">Agregar Producto</property>
+              </object>
+              <packing>
+                <property name="left_attach">1</property>
+                <property name="top_attach">3</property>
+              </packing>
+            </child>
+
+            <child>
+              <object class="GtkButton" id="button_eliminar">
+                <property name="label">Eliminar Producto</property>
+              </object>
+              <packing>
+                <property name="left_attach">2</property>
+                <property name="top_attach">3</property>
+              </packing>
+            </child>
+          </object>
+        </child>
+
+        <child>
+          <object class="GtkScrolledWindow" id="scroll_window">
+            <property name="hexpand">True</property>
+            <property name="vexpand">True</property>
+            <child>
+              <object class="GtkTreeView" id="treeview_productos">
+                <property name="headers_visible">True</property>
+              </object>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
